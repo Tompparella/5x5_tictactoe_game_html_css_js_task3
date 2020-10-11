@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body class="game">
+    <div id="app">
+      <h1>TicTacToe</h1>
+      <h2 id="playerTurn">Turn: Player 1</h2>
+      <div class="progress">
+        <div class="indeterminate"></div>
+      </div>
+      <h3 id="seconds">10s</h3>
+      <div class="container" id="board"></div>
+      <footer>
+        <button id="reset">Reset</button>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+    <footer>&copy Copyright 2020 Tommi Kunnari</footer>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>

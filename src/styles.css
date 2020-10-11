@@ -1,0 +1,134 @@
+/* 5x5 TicTacToe Game - Tommi Kunnari - 0543382 - 19.9.2020 */
+/* 
+Primary color: #ffccdd
+Secondary color: #66ffcc
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+div {
+  color: #00cccc;
+}
+body {
+  font-family: Arial, Verdana;
+  background: #ffccdd;
+}
+footer {
+  text-align: center;
+  color: white;
+}
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+h3 {
+  font-size: 20px;
+  color: #ffffff;
+  background: #99ffff;
+  border: solid 1px;
+  text-align: center;
+  margin: auto;
+  width: 50px;
+}
+td {
+  color: #00cccc;
+  border: solid 3px #ffffff;
+  border-radius: 10%;
+}
+#app {
+  align-content: center;
+  width: 425px;
+  height: 575px;
+  overflow: none;
+  margin: auto;
+  margin-top: 100px;
+  background: #66ffcc;
+  border-radius: 5%;
+  border: solid 1px #000000;
+}
+
+.progress {
+  color: #ffffff;
+  position: relative;
+  width: 70%;
+  height: 25px;
+  margin: auto;
+  margin-bottom: 0;
+  border-radius: 1.5em;
+  border: solid 2px;
+}
+.progress .determinate {
+  background: #99ffff;
+}
+
+/*.determinate::before {
+  content: attr(data-label);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0.3em;
+  top: 0.15em;
+  bottom: 0.2em;
+  width: calc(10 * var(width, 0) * 1%);
+  min-width: 0.1rem;
+  max-width: 95%;
+  background: lightpink;
+  border-radius: 1em;
+  padding: 0.8em;
+}
+*/
+
+.container {
+  width: auto;
+  position: center;
+  border-collapse: collapse;
+  display: grid;
+  grid-template-columns: repeat(5 1fr);
+}
+.container .row {
+  margin-bottom: 0;
+}
+.container .row .col.s1 {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  border: solid 1px #ffffff;
+  background: #99ffff;
+  text-align: center;
+  margin: auto;
+}
+.container .row .col.s1:hover {
+  background: whitesmoke;
+  cursor: pointer;
+}
+
+#reset {
+  margin-top: 5px;
+  font-size: 20px;
+  color: #00cccc;
+  border: 0;
+  background: #ffffff;
+  border-radius: 10%;
+  width: 50%;
+  padding: 15px;
+  border-radius: 5px;
+  align-self: center;
+  outline: none;
+}
+#reset:hover {
+  cursor: pointer;
+  background: #99ffff;
+  border: 5px #ffffff;
+}
